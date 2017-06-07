@@ -14,6 +14,7 @@
 		F76079441EE6D60E00BC1DFD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F76079421EE6D60E00BC1DFD /* LaunchScreen.storyboard */; };
 		F760794F1EE6D60E00BC1DFD /* DistanceConverterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F760794E1EE6D60E00BC1DFD /* DistanceConverterTests.swift */; };
 		F760795A1EE6D60E00BC1DFD /* DistanceConverterUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F76079591EE6D60E00BC1DFD /* DistanceConverterUITests.swift */; };
+		F76079681EE8170B00BC1DFD /* Distance.swift in Sources */ = {isa = PBXBuildFile; fileRef = F76079671EE8170B00BC1DFD /* Distance.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		F76079551EE6D60E00BC1DFD /* DistanceConverterUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DistanceConverterUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F76079591EE6D60E00BC1DFD /* DistanceConverterUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DistanceConverterUITests.swift; sourceTree = "<group>"; };
 		F760795B1EE6D60E00BC1DFD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F76079671EE8170B00BC1DFD /* Distance.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Distance.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +101,7 @@
 			children = (
 				F76079391EE6D60E00BC1DFD /* AppDelegate.swift */,
 				F760793B1EE6D60E00BC1DFD /* ViewController.swift */,
+				F76079671EE8170B00BC1DFD /* Distance.swift */,
 				F760793D1EE6D60E00BC1DFD /* Main.storyboard */,
 				F76079401EE6D60E00BC1DFD /* Assets.xcassets */,
 				F76079421EE6D60E00BC1DFD /* LaunchScreen.storyboard */,
@@ -262,6 +265,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F76079681EE8170B00BC1DFD /* Distance.swift in Sources */,
 				F760793C1EE6D60E00BC1DFD /* ViewController.swift in Sources */,
 				F760793A1EE6D60E00BC1DFD /* AppDelegate.swift in Sources */,
 			);
@@ -514,6 +518,7 @@
 				F76079601EE6D60E00BC1DFD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F76079611EE6D60E00BC1DFD /* Build configuration list for PBXNativeTarget "DistanceConverterTests" */ = {
 			isa = XCConfigurationList;
@@ -522,6 +527,7 @@
 				F76079631EE6D60E00BC1DFD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F76079641EE6D60E00BC1DFD /* Build configuration list for PBXNativeTarget "DistanceConverterUITests" */ = {
 			isa = XCConfigurationList;
@@ -530,6 +536,7 @@
 				F76079661EE6D60E00BC1DFD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -91,6 +91,10 @@
                             <constraint firstAttribute="leadingMargin" secondItem="WF6-O8-CMZ" secondAttribute="leading" id="dEK-T9-NmM"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="kilometersTextField" destination="Rr2-Tr-qk5" id="scn-QI-qHQ"/>
+                        <outlet property="milesTextField" destination="DPu-fa-1ni" id="SZ4-gq-MUS"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
