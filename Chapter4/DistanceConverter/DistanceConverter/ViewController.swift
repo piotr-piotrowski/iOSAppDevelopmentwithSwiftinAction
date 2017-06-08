@@ -20,5 +20,19 @@ class ViewController: UIViewController {
         kilometersTextField.text = "\(distance.km)"
     }
 
+    @IBAction func convertToKm(_ sender: UIButton) {
+        if let miles = Double(milesTextField.text!) {
+            distance.miles = miles
+            kilometersTextField.text = "\(distance.km)"
+        }
+    }
+    
+    @IBAction func convertToMiles(_ sender: UIButton) {
+        if let km = Double(kilometersTextField.text!) {
+            distance.km = km
+            milesTextField.text = "\(distance.miles)"
+        }
+    }
+    
 }
 
