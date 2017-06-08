@@ -18,16 +18,19 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         milesTextField.text = "\(distance.miles)"
         kilometersTextField.text = "\(distance.km)"
+        
+        // connecting actions from code
+        kilometersTextField.addTarget(self, action: #selector(convertToMiles(_:)), for: .editingChanged)
     }
 
-    @IBAction func convertToKm(_ sender: UIButton) {
+    @IBAction func convertToKm(_ sender: Any) {
         if let miles = Double(milesTextField.text!) {
             distance.miles = miles
             kilometersTextField.text = "\(distance.km)"
         }
     }
     
-    @IBAction func convertToMiles(_ sender: UIButton) {
+    @IBAction func convertToMiles(_ sender: Any) {
         if let km = Double(kilometersTextField.text!) {
             distance.km = km
             milesTextField.text = "\(distance.miles)"
