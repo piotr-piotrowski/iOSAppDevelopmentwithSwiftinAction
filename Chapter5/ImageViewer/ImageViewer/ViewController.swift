@@ -23,5 +23,9 @@ class ViewController: UIViewController {
         sender.setTranslation(CGPoint.zero, in: self.view)
     }
 
+    @IBAction func handlePinch(_ sender: UIPinchGestureRecognizer) {
+        imageView.transform = imageView.transform.scaledBy(x: sender.scale, y: sender.scale)
+        sender.scale = 1
+    }
 }
 

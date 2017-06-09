@@ -27,6 +27,7 @@
                                 <gestureRecognizers/>
                                 <connections>
                                     <outletCollection property="gestureRecognizers" destination="nxG-BA-3HT" appends="YES" id="vnj-fS-yv1"/>
+                                    <outletCollection property="gestureRecognizers" destination="m8Y-wv-jXI" appends="YES" id="sGQ-m0-4Tp"/>
                                 </connections>
                             </imageView>
                         </subviews>
@@ -42,6 +43,11 @@
                         <action selector="handlePan:" destination="BYZ-38-t0r" id="j48-GP-aRq"/>
                     </connections>
                 </panGestureRecognizer>
+                <pinchGestureRecognizer id="m8Y-wv-jXI">
+                    <connections>
+                        <action selector="handlePinch:" destination="BYZ-38-t0r" id="qgr-MT-tx9"/>
+                    </connections>
+                </pinchGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="85.599999999999994" y="35.532233883058474"/>
         </scene>
