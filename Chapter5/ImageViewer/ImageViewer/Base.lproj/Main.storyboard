@@ -28,6 +28,7 @@
                                 <connections>
                                     <outletCollection property="gestureRecognizers" destination="nxG-BA-3HT" appends="YES" id="vnj-fS-yv1"/>
                                     <outletCollection property="gestureRecognizers" destination="m8Y-wv-jXI" appends="YES" id="sGQ-m0-4Tp"/>
+                                    <outletCollection property="gestureRecognizers" destination="V5B-4X-LpF" appends="YES" id="uEq-lD-Ygg"/>
                                 </connections>
                             </imageView>
                         </subviews>
@@ -48,6 +49,11 @@
                         <action selector="handlePinch:" destination="BYZ-38-t0r" id="qgr-MT-tx9"/>
                     </connections>
                 </pinchGestureRecognizer>
+                <rotationGestureRecognizer id="V5B-4X-LpF">
+                    <connections>
+                        <action selector="handleRotate:" destination="BYZ-38-t0r" id="GeV-Jw-mqq"/>
+                    </connections>
+                </rotationGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="85.599999999999994" y="35.532233883058474"/>
         </scene>

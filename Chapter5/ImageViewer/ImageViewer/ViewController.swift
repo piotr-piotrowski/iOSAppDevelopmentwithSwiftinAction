@@ -27,5 +27,11 @@ class ViewController: UIViewController {
         imageView.transform = imageView.transform.scaledBy(x: sender.scale, y: sender.scale)
         sender.scale = 1
     }
+    
+    @IBAction func handleRotate(_ sender: UIRotationGestureRecognizer) {
+        imageView.transform = imageView.transform.rotated(by: sender.rotation)
+        sender.rotation = 0
+    }
+    
 }
 
