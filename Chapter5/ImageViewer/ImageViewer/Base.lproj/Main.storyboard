@@ -42,16 +42,19 @@
                 <panGestureRecognizer minimumNumberOfTouches="1" maximumNumberOfTouches="1" id="nxG-BA-3HT">
                     <connections>
                         <action selector="handlePan:" destination="BYZ-38-t0r" id="j48-GP-aRq"/>
+                        <outlet property="delegate" destination="BYZ-38-t0r" id="SHR-42-c0S"/>
                     </connections>
                 </panGestureRecognizer>
                 <pinchGestureRecognizer id="m8Y-wv-jXI">
                     <connections>
                         <action selector="handlePinch:" destination="BYZ-38-t0r" id="qgr-MT-tx9"/>
+                        <outlet property="delegate" destination="BYZ-38-t0r" id="ByD-f5-DQi"/>
                     </connections>
                 </pinchGestureRecognizer>
                 <rotationGestureRecognizer id="V5B-4X-LpF">
                     <connections>
                         <action selector="handleRotate:" destination="BYZ-38-t0r" id="GeV-Jw-mqq"/>
+                        <outlet property="delegate" destination="BYZ-38-t0r" id="cSa-Gu-IUH"/>
                     </connections>
                 </rotationGestureRecognizer>
             </objects>
