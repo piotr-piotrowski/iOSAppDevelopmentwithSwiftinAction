@@ -21,6 +21,11 @@ class ViewController: UIViewController {
         tapGestureRecognizer.numberOfTouchesRequired = 1
         tapGestureRecognizer.numberOfTapsRequired = 2
         imageView.addGestureRecognizer(tapGestureRecognizer)
+        
+        let doubleTapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(handleDoubleTap(_:)))
+        doubleTapGestureRecognizer.numberOfTouchesRequired = 2
+        doubleTapGestureRecognizer.numberOfTapsRequired = 2
+        imageView.addGestureRecognizer(doubleTapGestureRecognizer)
     }
 
     @IBAction func handlePan(_ sender: UIPanGestureRecognizer) {
@@ -44,6 +49,12 @@ class ViewController: UIViewController {
     func handleTap(_ sender: UITapGestureRecognizer) {
         imageNo += 1
         if imageNo == images.count { imageNo = 0 }
+        imageView.image = UIImage(named: images[imageNo])
+    }
+    
+    func handleDoubleTap(_ sender: UITapGestureRecognizer) {
+        imageNo -= 1
+        if imageNo == -1 { imageNo = images.count - 1 }
         imageView.image = UIImage(named: images[imageNo])
     }
     
