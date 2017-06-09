@@ -9,10 +9,18 @@
 import UIKit
 
 class ViewController: UIViewController {
+    
+    let images = ["CradleMountain.JPG", "Laguna69.JPG", "PatagoniaSky.JPG"]
+    var imageNo = 0
 
     @IBOutlet weak var imageView: UIImageView!
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        let tapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(handleTap(_:)))
+        tapGestureRecognizer.numberOfTouchesRequired = 1
+        tapGestureRecognizer.numberOfTapsRequired = 2
+        imageView.addGestureRecognizer(tapGestureRecognizer)
     }
 
     @IBAction func handlePan(_ sender: UIPanGestureRecognizer) {
@@ -31,6 +39,12 @@ class ViewController: UIViewController {
     @IBAction func handleRotate(_ sender: UIRotationGestureRecognizer) {
         imageView.transform = imageView.transform.rotated(by: sender.rotation)
         sender.rotation = 0
+    }
+    
+    func handleTap(_ sender: UITapGestureRecognizer) {
+        imageNo += 1
+        if imageNo == images.count { imageNo = 0 }
+        imageView.image = UIImage(named: images[imageNo])
     }
     
 }
