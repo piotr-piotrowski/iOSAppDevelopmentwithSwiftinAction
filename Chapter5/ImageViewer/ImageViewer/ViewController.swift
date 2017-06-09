@@ -10,16 +10,18 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var imageView: UIImageView!
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    @IBAction func handlePan(_ sender: UIPanGestureRecognizer) {
+        let translation = sender.translation(in: self.view)
+        imageView.center = CGPoint(
+            x: imageView.center.x + translation.x
+            , y: imageView.center.y + translation.y)
+        sender.setTranslation(CGPoint.zero, in: self.view)
     }
-
 
 }
 
