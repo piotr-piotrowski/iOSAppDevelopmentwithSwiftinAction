@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina4_7" orientation="portrait">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.19" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="ipad9_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.16"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -20,81 +20,84 @@
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Title:" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ceM-L4-Xq8">
-                                <rect key="frame" x="16" y="243" width="57" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Author:" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vFc-Hg-34T">
-                                <rect key="frame" x="16" y="293" width="57" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title:" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ceM-L4-Xq8">
+                                <rect key="frame" x="20" y="368" width="57" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="o4g-or-ufm">
-                                <rect key="frame" x="81" y="228" width="278" height="30"/>
+                                <rect key="frame" x="85" y="363" width="663" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="K59-gg-5ay">
-                                <rect key="frame" x="81" y="266" width="278" height="30"/>
+                                <rect key="frame" x="85" y="401" width="663" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Notes:" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mmJ-3L-JDu">
-                                <rect key="frame" x="16" y="339" width="57" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="vSH-XD-HqM">
-                                <rect key="frame" x="81" y="304" width="278" height="355"/>
+                                <rect key="frame" x="85" y="439" width="663" height="577"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" image="book" translatesAutoresizingMaskIntoConstraints="NO" id="7xl-eQ-ZGX">
-                                <rect key="frame" x="16" y="20" width="343" height="200"/>
+                                <rect key="frame" x="16" y="20" width="736" height="307"/>
                             </imageView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CtG-Dh-lkq" customClass="CosmosView" customModule="Bookcase" customModuleProvider="target">
-                                <rect key="frame" x="127.5" y="222" width="120" height="20"/>
+                                <rect key="frame" x="324" y="335" width="120" height="20"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Author:" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vFc-Hg-34T">
+                                <rect key="frame" x="20" y="406" width="57" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Notes:" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mmJ-3L-JDu">
+                                <rect key="frame" x="20" y="439" width="57" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="mmJ-3L-JDu" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="1gF-DX-Rey"/>
-                            <constraint firstItem="vFc-Hg-34T" firstAttribute="width" secondItem="mmJ-3L-JDu" secondAttribute="width" id="1zd-BL-Ton"/>
-                            <constraint firstItem="ceM-L4-Xq8" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="7Bx-QN-718"/>
-                            <constraint firstItem="K59-gg-5ay" firstAttribute="leading" secondItem="vFc-Hg-34T" secondAttribute="trailing" constant="8" symbolic="YES" id="7Rv-cZ-tWL"/>
-                            <constraint firstItem="vSH-XD-HqM" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="DpG-W5-b3q"/>
-                            <constraint firstItem="vFc-Hg-34T" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="FVz-Cg-MLW"/>
-                            <constraint firstItem="vSH-XD-HqM" firstAttribute="leading" secondItem="mmJ-3L-JDu" secondAttribute="trailing" constant="8" symbolic="YES" id="GSu-aD-h8p"/>
-                            <constraint firstItem="ceM-L4-Xq8" firstAttribute="width" secondItem="mmJ-3L-JDu" secondAttribute="width" id="IU8-ee-hnp"/>
-                            <constraint firstItem="7xl-eQ-ZGX" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.3" id="OJ1-6m-BI4"/>
-                            <constraint firstItem="o4g-or-ufm" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="Qra-Os-TSE"/>
-                            <constraint firstItem="K59-gg-5ay" firstAttribute="top" secondItem="o4g-or-ufm" secondAttribute="bottom" constant="8" symbolic="YES" id="Ziy-mO-UHr"/>
-                            <constraint firstAttribute="leadingMargin" secondItem="7xl-eQ-ZGX" secondAttribute="leading" id="aDH-Z3-6U4"/>
-                            <constraint firstItem="CtG-Dh-lkq" firstAttribute="top" secondItem="7xl-eQ-ZGX" secondAttribute="bottom" constant="2" id="bQX-YF-UO6"/>
-                            <constraint firstItem="7xl-eQ-ZGX" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="bTV-uW-faC"/>
-                            <constraint firstItem="K59-gg-5ay" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="c0x-cV-Xvp"/>
-                            <constraint firstItem="o4g-or-ufm" firstAttribute="top" secondItem="7xl-eQ-ZGX" secondAttribute="bottom" constant="8" symbolic="YES" id="eZs-Sa-Nqe"/>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="vSH-XD-HqM" secondAttribute="bottom" constant="8" symbolic="YES" id="ksM-FM-wY4"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="7xl-eQ-ZGX" secondAttribute="trailing" id="l8n-0o-0YC"/>
-                            <constraint firstItem="vSH-XD-HqM" firstAttribute="top" secondItem="K59-gg-5ay" secondAttribute="bottom" constant="8" symbolic="YES" id="udD-z3-WE5"/>
-                            <constraint firstItem="o4g-or-ufm" firstAttribute="leading" secondItem="ceM-L4-Xq8" secondAttribute="trailing" constant="8" symbolic="YES" id="x7M-mX-g7s"/>
-                            <constraint firstItem="CtG-Dh-lkq" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="zaF-dE-Nvo"/>
+                            <constraint firstItem="vSH-XD-HqM" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="1JU-JY-ntr"/>
+                            <constraint firstItem="K59-gg-5ay" firstAttribute="top" secondItem="o4g-or-ufm" secondAttribute="bottom" constant="8" symbolic="YES" id="1S1-Fu-TLU"/>
+                            <constraint firstItem="vSH-XD-HqM" firstAttribute="top" secondItem="K59-gg-5ay" secondAttribute="bottom" constant="8" symbolic="YES" id="3ZT-VQ-iL8"/>
+                            <constraint firstItem="ceM-L4-Xq8" firstAttribute="width" secondItem="mmJ-3L-JDu" secondAttribute="width" id="5P0-i7-SI5"/>
+                            <constraint firstItem="o4g-or-ufm" firstAttribute="top" secondItem="CtG-Dh-lkq" secondAttribute="bottom" constant="8" symbolic="YES" id="6IU-3J-ejj"/>
+                            <constraint firstItem="K59-gg-5ay" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="787-kX-mm0"/>
+                            <constraint firstItem="vFc-Hg-34T" firstAttribute="centerY" secondItem="K59-gg-5ay" secondAttribute="centerY" id="BTj-VZ-PQc"/>
+                            <constraint firstItem="mmJ-3L-JDu" firstAttribute="top" secondItem="vSH-XD-HqM" secondAttribute="top" id="D5R-A2-Bkd"/>
+                            <constraint firstAttribute="trailing" secondItem="7xl-eQ-ZGX" secondAttribute="trailing" constant="16" id="MGK-RY-4Z1"/>
+                            <constraint firstItem="CtG-Dh-lkq" firstAttribute="top" secondItem="7xl-eQ-ZGX" secondAttribute="bottom" constant="8" symbolic="YES" id="OfI-Cr-r1m"/>
+                            <constraint firstItem="vSH-XD-HqM" firstAttribute="leading" secondItem="mmJ-3L-JDu" secondAttribute="trailing" constant="8" symbolic="YES" id="Olp-Gn-PiW"/>
+                            <constraint firstItem="7xl-eQ-ZGX" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="16" id="PKq-Cw-IAh"/>
+                            <constraint firstItem="o4g-or-ufm" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="TQL-Gz-Pqt"/>
+                            <constraint firstItem="o4g-or-ufm" firstAttribute="leading" secondItem="ceM-L4-Xq8" secondAttribute="trailing" constant="8" symbolic="YES" id="VFC-BA-HFy"/>
+                            <constraint firstItem="7xl-eQ-ZGX" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="-1.4210854715202004e-14" id="bPk-jw-OQ1"/>
+                            <constraint firstItem="K59-gg-5ay" firstAttribute="leading" secondItem="vFc-Hg-34T" secondAttribute="trailing" constant="8" symbolic="YES" id="eZ9-0g-nrV"/>
+                            <constraint firstItem="vFc-Hg-34T" firstAttribute="width" secondItem="mmJ-3L-JDu" secondAttribute="width" id="fx2-9X-N0p"/>
+                            <constraint firstItem="vFc-Hg-34T" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="hXt-jA-IbH"/>
+                            <constraint firstItem="7xl-eQ-ZGX" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.3" id="k2o-nU-qhn"/>
+                            <constraint firstItem="CtG-Dh-lkq" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="lVZ-Qp-G9e"/>
+                            <constraint firstItem="ceM-L4-Xq8" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="qyU-ej-jrR"/>
+                            <constraint firstItem="ceM-L4-Xq8" firstAttribute="centerY" secondItem="o4g-or-ufm" secondAttribute="centerY" id="r4V-1f-Uoc"/>
+                            <constraint firstItem="mmJ-3L-JDu" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="xGk-tA-wz9"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="vSH-XD-HqM" secondAttribute="bottom" constant="8" symbolic="YES" id="xXu-4M-cpG"/>
                         </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="476" y="467.3163418290855"/>
+            <point key="canvasLocation" x="473.91304347826093" y="466.304347826087"/>
         </scene>
     </scenes>
     <resources>
